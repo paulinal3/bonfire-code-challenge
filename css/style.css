@@ -1,12 +1,13 @@
 body {
   font-family: Helvetica, sans-serif;
-  background: url("/img/mountainscape.png") no-repeat;
-  background-size: 100%;
 }
 
 #headerContainer {
   z-index: 1;
   color: #fff;
+  background: url("/img/mountainscape.png") no-repeat;
+  background-size: cover;
+  height: 40vh;
 }
 
 header {
@@ -51,5 +52,50 @@ header nav a {
 
 header nav a:focus {
   color: #fdecca;
+}
+
+#hero {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 25% 0 25%;
+}
+
+#hero #heroHeader {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#hero #heroText {
+  color: #dde8f2;
+}
+
+#btnsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#btnsContainer #showBtns {
+  z-index: 2;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase;
+  margin-top: -30px;
+}
+
+#btnsContainer .btn {
+  border: 2px solid #696479;
+  background-color: #696479;
+  padding: 20px 40px 20px 40px;
+  color: #dedde0;
 }
 /*# sourceMappingURL=style.css.map */

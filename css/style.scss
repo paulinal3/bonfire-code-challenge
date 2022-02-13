@@ -4,13 +4,17 @@ $active-color: #fdecca;
 
 body {
     font-family: Helvetica, sans-serif;
-    background: url("/img/mountainscape.png") no-repeat;
-    background-size: 100%;
+    // background: url("/img/mountainscape.png") no-repeat;
+    // background-size: 100%;
+    // position: absolute;
 }
 
 #headerContainer {
     z-index: 1;
     color: $primary-header-color;
+    background: url("/img/mountainscape.png") no-repeat;
+    background-size: cover;
+    height: 40vh;
     // position: relative;
 }
 
@@ -47,3 +51,37 @@ header {
     }
 }
 
+#hero {
+    text-align: center;
+    justify-content: center;
+    padding: 0 25% 0 25%;
+
+    #heroHeader {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    #heroText {
+        color: #dde8f2;
+    }
+}
+
+#btnsContainer {
+    display: flex;
+    justify-content: center;
+
+    #showBtns {
+        z-index: 2;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        text-transform: uppercase;
+        margin-top: -30px;
+    }
+
+    .btn {
+        border: 2px solid $primary-button-color;
+        background-color: $primary-button-color;
+        padding: 20px 40px 20px 40px;
+        color: #dedde0;
+    }
+}
