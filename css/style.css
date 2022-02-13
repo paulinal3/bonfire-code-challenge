@@ -1,4 +1,55 @@
 body {
   font-family: Helvetica, sans-serif;
+  background: url("/img/mountainscape.png") no-repeat;
+  background-size: 100%;
+}
+
+#headerContainer {
+  z-index: 1;
+  color: #fff;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 100px 0 50px;
+  padding-top: 3%;
+}
+
+header #logoContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-transform: uppercase;
+}
+
+header #design {
+  font-weight: normal;
+  color: #fdecca;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-column-gap: 60%;
+          column-gap: 60%;
+  height: 60px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header nav a:focus {
+  color: #fdecca;
 }
 /*# sourceMappingURL=style.css.map */

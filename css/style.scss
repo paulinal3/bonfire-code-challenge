@@ -1,6 +1,49 @@
 $primary-button-color: #696479;
+$primary-header-color: #fff;
 $active-color: #fdecca;
 
 body {
     font-family: Helvetica, sans-serif;
+    background: url("/img/mountainscape.png") no-repeat;
+    background-size: 100%;
 }
+
+#headerContainer {
+    z-index: 1;
+    color: $primary-header-color;
+    // position: relative;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 100px 0 50px;
+    padding-top: 3%;
+
+    #logoContainer {
+        display: flex;
+        text-transform: uppercase;
+    }
+    
+    #design {
+        font-weight: normal;
+        color: $active-color;
+    }
+
+    nav {
+        display: flex;
+        align-items: flex-end;
+        column-gap: 60%;
+        height: 60px;
+
+        a {
+            text-decoration: none;
+            color: $primary-header-color;
+        }
+
+        a:focus {
+            color: $active-color;
+        }
+    }
+}
+
