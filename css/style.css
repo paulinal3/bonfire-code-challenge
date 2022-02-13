@@ -1,11 +1,4 @@
-#showBtns {
-    display: flex;
-    justify-content: center;
+body {
+  font-family: Helvetica, sans-serif;
 }
-
-.row {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    gap: 5%;
-}
+/*# sourceMappingURL=style.css.map */
