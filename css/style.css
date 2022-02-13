@@ -92,7 +92,7 @@ header nav a:focus {
   margin-top: -30px;
 }
 
-#btnsContainer #showBtns .btn {
+.btn {
   border: 2px solid #696479;
   background-color: #696479;
   padding: 20px 40px 20px 40px;

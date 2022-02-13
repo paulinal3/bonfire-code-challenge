@@ -76,14 +76,14 @@ header {
         justify-content: center;
         text-transform: uppercase;
         margin-top: -30px;
-
-        .btn {
-            border: 2px solid $primary-button-color;
-            background-color: $primary-button-color;
-            padding: 20px 40px 20px 40px;
-            color: #dedde0;
-        }
     }
+}
+
+.btn {
+    border: 2px solid $primary-button-color;
+    background-color: $primary-button-color;
+    padding: 20px 40px 20px 40px;
+    color: #dedde0;
 }
 
 main {

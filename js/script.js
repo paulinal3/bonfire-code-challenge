@@ -7,18 +7,29 @@ const oddBoxes = document.querySelectorAll(".odd")
 const evenBoxes = document.querySelectorAll(".even")
 
 // create functions that will add/hide visibility based on btn clicked
-const showAll = () => {
+const showAll = (e) => {
+    activeShow(e)
     allBoxes.forEach(box => box.style.visibility = "visible")
 }
 
-const showEven = () => {
+const showEven = (e) => {
+    activeShow(e)
     evenBoxes.forEach(box => box.style.visibility = "visible")
     oddBoxes.forEach(box => box.style.visibility = "hidden")
 }
 
-const showOdd = () => {
+const showOdd = (e) => {
+    activeShow(e)
     oddBoxes.forEach(box => box.style.visibility = "visible")
     evenBoxes.forEach(box => box.style.visibility = "hidden")
+}
+
+const activeShow = (e) => {
+    console.log(e.target)
+    const showBtns = document.querySelectorAll(".btn")
+
+    showBtns.forEach(btn => btn.classList.remove("activeTab"))
+    e.target.classList.add("activeTab")
 }
 
 // add click event listenrs to btns
