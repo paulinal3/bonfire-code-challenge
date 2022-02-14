@@ -108,32 +108,63 @@ header #design {
   }
 }
 
-@media (min-width: 500px) {
-  #btnsContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
+#btnsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#btnsContainer #showBtns {
+  z-index: 2;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase;
+}
+
+#btnsContainer .btn {
+  border: 2px solid #696479;
+  background-color: #696479;
+  color: #dedde0;
+}
+
+#btnsContainer .activeTab {
+  background-color: #fdecca;
+  border: 2px solid #fdecca;
+  color: #52485d;
+}
+
+@media (max-width: 450px) {
   #btnsContainer #showBtns {
-    z-index: 2;
-    position: absolute;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-transform: uppercase;
+    margin-top: -15px;
+  }
+  .btn {
+    padding: 5px 10px;
+  }
+}
+
+@media (min-width: 450px) {
+  #btnsContainer #showBtns {
+    margin-top: -20px;
+  }
+  .btn {
+    padding: 10px 20px;
+  }
+}
+
+@media (min-width: 600px) {
+  #btnsContainer #showBtns {
     margin-top: -30px;
   }
   .btn {
-    border: 2px solid #696479;
-    background-color: #696479;
-    padding: 20px 40px 20px 40px;
-    color: #dedde0;
+    padding: 20px 40px;
   }
 }
 
@@ -150,46 +181,6 @@ main {
   row-gap: 50px;
   text-transform: uppercase;
   padding: 100px 0 100px 0;
-}
-
-@media (min-width: 500px) {
-  .row {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: center;
-    gap: 5%;
-  }
-}
-
-@media (max-width: 1300px) {
-  .box {
-    font-size: 2.5vw;
-    font-weight: normal;
-    color: #aaaeb6;
-  }
-  .subtext {
-    font-size: 1vw;
-    font-weight: bold;
-    color: #696579;
-    margin-top: -5%;
-  }
-  .boxBtn {
-    background-color: #696579;
-    padding: 5% 20% 5% 20%;
-    border: #696579;
-    color: #ffffff;
-    opacity: 0;
-  }
-}
-
-.activeTab {
-  background-color: #fdecca;
-  border: 2px solid #fdecca;
-  color: #52485d;
 }
 
 @media (max-width: 500px) {
@@ -233,6 +224,40 @@ main {
     opacity: 0;
     font-size: 10px;
     margin-top: 20%;
+  }
+}
+
+@media (min-width: 500px) {
+  .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    gap: 5%;
+  }
+}
+
+@media (max-width: 1300px) {
+  .box {
+    font-size: 2.5vw;
+    font-weight: normal;
+    color: #aaaeb6;
+  }
+  .subtext {
+    font-size: 1vw;
+    font-weight: bold;
+    color: #696579;
+    margin-top: -5%;
+  }
+  .boxBtn {
+    background-color: #696579;
+    padding: 5% 20% 5% 20%;
+    border: #696579;
+    color: #ffffff;
+    opacity: 0;
   }
 }
 

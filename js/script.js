@@ -29,6 +29,7 @@ const showOdd = (e) => {
 }
 
 const activeShow = (e) => {
+    console.log(e.target)
     const showBtns = document.querySelectorAll(".btn")
 
     showBtns.forEach(btn => btn.classList.remove("activeTab"))
