@@ -2,11 +2,8 @@ $primary-button-color: #696479;
 $primary-header-color: #fff;
 $active-color: #fdecca;
 
-body {
+* {
     font-family: Helvetica, sans-serif;
-    // background: url("/img/mountainscape.png") no-repeat;
-    // background-size: 100%;
-    // position: absolute;
 }
 
 #headerContainer {
@@ -19,11 +16,17 @@ body {
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 100px 0 50px;
-    padding-top: 3%;
-
+    nav {
+        a {
+            text-decoration: none;
+            color: $primary-header-color;
+        }
+    
+        a:focus {
+            color: $active-color;
+        }
+    }
+    
     #logoContainer {
         display: flex;
         text-transform: uppercase;
@@ -33,22 +36,42 @@ header {
         font-weight: normal;
         color: $active-color;
     }
+}
+
+@media (max-width: 500px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 30px 0 20px;
+        padding-top: 5px;
+
+        #logo, #design {
+            font-size: 20px;
+        }
+    }
 
     nav {
         display: flex;
-        align-items: flex-end;
-        column-gap: 60%;
-        height: 60px;
+        align-items: center;
+        column-gap: 15%;
+    }
+}
 
-        a {
-            text-decoration: none;
-            color: $primary-header-color;
-        }
-
-        a:focus {
-            color: $active-color;
+@media (min-width: 500px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 100px 0 50px;
+        padding-top: 3%;
+    
+        nav {
+            display: flex;
+            align-items: flex-end;
+            column-gap: 60%;
+            height: 60px;
         }
     }
+
 }
 
 #hero {
@@ -64,6 +87,9 @@ header {
         color: #dde8f2;
     }
 }
+
+
+// }
 
 // #btnsContainer {
 //     display: flex;

@@ -1,4 +1,4 @@
-body {
+* {
   font-family: Helvetica, sans-serif;
 }
 
@@ -10,15 +10,13 @@ body {
   height: 40vh;
 }
 
-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 0 100px 0 50px;
-  padding-top: 3%;
+header nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header nav a:focus {
+  color: #fdecca;
 }
 
 header #logoContainer {
@@ -33,25 +31,54 @@ header #design {
   color: #fdecca;
 }
 
-header nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-column-gap: 60%;
-          column-gap: 60%;
-  height: 60px;
+@media (max-width: 500px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0 30px 0 20px;
+    padding-top: 5px;
+  }
+  header #logo, header #design {
+    font-size: 20px;
+  }
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-column-gap: 15%;
+            column-gap: 15%;
+  }
 }
 
-header nav a {
-  text-decoration: none;
-  color: #fff;
-}
-
-header nav a:focus {
-  color: #fdecca;
+@media (min-width: 500px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0 100px 0 50px;
+    padding-top: 3%;
+  }
+  header nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-column-gap: 60%;
+            column-gap: 60%;
+    height: 60px;
+  }
 }
 
 #hero {
